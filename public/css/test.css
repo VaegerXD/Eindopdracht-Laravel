@@ -1,0 +1,386 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+body {
+ background-color: #4466eb;
+    line-height: 1.75em;
+
+}
+
+.div0 {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.div1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    background: #000;
+    height: 100vh;
+    width: 100%;
+}
+
+.div2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    background-image: url(https://i.pinimg.com/originals/de/62/f6/de62f69f5ddf1baf711a1e5dc4552cbf.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+    
+
+    opacity: .5;
+    height: 100vh;
+    width: 100%;
+}
+
+.div3 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.container.one {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.container h1 {
+
+    color: white;
+    text-transform: uppercase;
+    display: block;
+
+}
+
+.tekst1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.tekst2 {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+@keyframes text {
+    0% {
+        color: #6993f0;
+        margin-bottom: -40px;
+
+    }
+
+    50% {
+        color: #3e59e4;
+        letter-spacing: 10px;
+        margin-bottom: -40px;
+    }
+
+
+}
+
+
+
+img {
+    
+   
+    
+   width: 20%
+
+
+
+
+}
+
+button{
+
+    
+    
+   font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(125deg, #6993f0, #6993f0 );
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 8px 20px;
+     font-weight: 600;
+    box-shadow: 0 30px 20px rgba(0,0,0, 0.2);
+    border-color: transparent;
+    
+    letter-spacing: 1px;
+
+}
+
+button:hover{
+ color: #6993f0;
+    background: #fff;
+    transition: 0.5s;
+
+}
+
+.derdesectie p{
+    color: black;
+
+    letter-spacing: 1px;
+    font-size: 18px;
+    
+    
+}
+
+h3{
+text-align: center;
+        
+
+color: white;}
+
+
+
+
+.box span:first-child{
+    animation-delay: -0.2s;
+}
+.box span:2nd-child{
+    animation-delay: -0.4s;
+}
+
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    color:     #6782b4
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    background-color: transparent;
+ border-color: transparent;
+     
+    border-radius: 25px;
+
+
+
+}
+
+.container .card:hover{
+background: #ebf5fc;
+    transition: 1.2s;
+}
+
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 0px;
+    background: #ebf5fc;
+box-shadow: 0 10px 20px rgba(0,0,0, 0.1);
+    
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+}
+.container .card:hover .box{
+    transform: translateY(-30px);
+    box-shadow: 0 10px 40px rgba(0,0,0, 0.4);
+         background: linear-gradient(35deg, #6993f0, #6993f0 );
+
+}
+
+
+
+
+.container .card .box .content{
+    
+    text-align: center;
+    
+    
+}
+
+.container .card .box .content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 4em;
+    color: rgba(0,0,0, 0.05);
+    pointer-events: none;
+}
+
+.container .card:hover .box .content h2{
+
+    color: rgba(0,0,0, 0.05);
+
+}
+
+.container .card:hover .box .content h3,  .container .card:hover .box .content p{
+    color: #fff;
+    
+}
+
+.container .card .box .content h3{
+
+font-size: 1.1em;
+color: #777;
+z-index: 1;
+transition: 0.5s;
+}
+
+.container .card .box .content p{
+    font-size: 1.1em;
+    font-weight: 1em;
+color: #777;
+z-index: 1;
+transition: 0.5s;
+}
+
+.container .card .box .content a{
+    
+    position: relative;
+    display: inline-block;
+    padding: 8px 22px;
+    background: linear-gradient(55deg, #6993f0, #6993f0 );
+    margin-top: 15px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+     font-weight: 600;
+ box-shadow: 0px 1px 2px rgba(0,0,0,.2);  
+
+}
+
+
+
+.container .card:hover .box .content a{
+     color: #6993f0;
+    background: #fff;
+    transition: 0.5s;
+    
+   
+    
+
+}
+
+
+
+.button {
+
+font-family: 'Raleway', sans-serif;
+ font-weight: 400;
+  width : 200px;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.btnTwo {
+  position : relative;
+  width : 180px;
+    border-radius: 10px;
+  height : 110px;
+  margin-top: -105px;
+  padding-top: 2px;
+  
+  left : -250px;
+  transition : .5s;
+}
+.btnText {
+  color : white;
+    text-align: center;
+  transition : .3s;
+    margin-top: 10px;
+}
+.btnText2 {
+  margin-top : 60px;
+  margin-right : -130px;
+  color : #FFF;
+    
+}
+
+.fa{
+color: #6993f0;
+    
+}
+
+
+.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -130px;
+    color: #6993f0;
+  background-color: #fff;
+    
+}
+
+
+.button:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 45px;
+}
+.button:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
+
+
+
+
